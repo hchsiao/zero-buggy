@@ -6,12 +6,12 @@ module debug_module #(
 )(
   DMIPort.Slave dm,
 
+  output logic halted,
+  output logic postexec,
+
   input logic clk,
   input logic rst,
-  input logic test_mode,
-
-  output logic halted,
-  output logic postexec
+  input logic test_mode
 );
 
 logic [31:0] mem[256];
