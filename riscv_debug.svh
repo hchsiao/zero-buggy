@@ -1,10 +1,12 @@
 `ifndef RISCV_DEBUG_SVH
 `define RISCV_DEBUG_SVH
 
-`define	ABITS        32
+`define	ABITS        15
 
 `define	DTMCS_LEN    32
-`define	DMI_LEN      66
+`define	DMI_LEN      (34 + `ABITS)
+
+`define	PB_BASE_ADDR 'h20000000
 
 typedef struct packed {
   logic [13:0] _z1;
