@@ -6,7 +6,8 @@
 `define	DTMCS_LEN    32
 `define	DMI_LEN      (34 + `ABITS)
 
-`define	PB_BASE_ADDR 'h20000000
+`define	PB_BASE_ADDR 'h700
+`define	PB_ADDRRNG   'h100
 
 typedef struct packed {
   logic [13:0] _z1;
